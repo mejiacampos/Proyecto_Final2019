@@ -24,7 +24,7 @@ MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Emarca=(EditText)findViewById(R.id.marca);
         Emodelo=(EditText)findViewById(R.id.modelo);
-        guardar=(Button)findViewById(R.id.guardar);
+        guardar=(Button )findViewById(R.id.guardar);
         buscar=(Button)findViewById(R.id.buscar);
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
