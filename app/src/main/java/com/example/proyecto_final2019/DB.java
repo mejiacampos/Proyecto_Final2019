@@ -42,7 +42,6 @@ public class DB extends SQLiteOpenHelper {
 
         return mensaje;
     }
-}
     public String[] buscar_reg(String buscar){
         String[] datos= new String[3];
         SQLiteDatabase database = this.getWritableDatabase();
