@@ -35,3 +35,22 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),mensaje,Toast.LENGTH_SHORT).show();
             }
         });
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_settins) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}
