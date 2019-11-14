@@ -14,9 +14,11 @@ import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
 
+    //HOLA SOY BRAYAN EDUARDO, HOLA DIEGO**
     EditText Ebuscar;
     TextView marca, modelo;
     Button Bbuscar,BEliminar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
