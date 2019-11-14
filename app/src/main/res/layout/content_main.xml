@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VENTA DE AUTOS"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:src="@drawable/venta" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_estilo"
+                android:drawableRight="@drawable/ic_guardar"
+                android:onClick="guardar"
+                android:paddingRight="75dp"
+                android:paddingLeft="95dp"
+                android:text="Guardar"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_estilo"
+                android:drawableRight="@drawable/ic_guardar"
+                android:onClick="guardar"
+                android:paddingRight="75dp"
+                android:paddingLeft="95dp"
+                android:text="Guardar"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/btnConsultar1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_estilo"
+                android:drawableRight="@drawable/ic_buscar"
+                android:onClick="consultarporcodigo"
+                android:paddingRight="75dp"
+                android:paddingLeft="15dp"
+                android:text="Consulta por código"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnConsultar2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_estilo"
+                android:drawableRight="@drawable/ic_descri"
+                android:onClick="consultarpordescripcion"
+                android:paddingRight="75dp"
+                android:paddingLeft="15dp"
+                android:text="Consulta por descripción"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btninventario"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_estilo"
+                android:drawableRight="@drawable/ic_guardar"
+                android:onClick="inventario"
+                android:paddingRight="75dp"
+                android:paddingLeft="75dp"
+                android:text="Inventario"
+                android:textSize="15dp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_estilo"
+                android:drawableRight="@drawable/ic_borrar"
+                android:onClick="bajaporcodigo"
+                android:paddingRight="75dp"
+                android:paddingLeft="110dp"
+                android:text="Eliminar "
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/btn_estilo"
+                android:onClick="modificacion"
+                android:paddingRight="5dp"
+                android:text="Editar"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
