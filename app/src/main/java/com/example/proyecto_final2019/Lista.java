@@ -15,13 +15,13 @@ public class Lista extends AppCompatActivity {
     ArrayAdapter adaptador;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista);
         lv = (ListView)findViewById(R.id.lista);
         DB db = new DB(getApplicationContext(),null,null,1);
         lista = db.llenar_lv();
-        adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1,lista);
+        adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
         lv.setAdapter(adaptador);
 
     }
