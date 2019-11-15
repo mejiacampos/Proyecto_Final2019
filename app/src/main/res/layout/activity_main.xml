@@ -27,7 +27,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="9dp"
                 android:text="  REGISTRO DE AUTOS"
-                android:textSize="37dp" />
+                android:textSize="37dp"
+                android:textcolor="#000"/>
 
             <ImageView
                 android:layout_width="match_parent"
