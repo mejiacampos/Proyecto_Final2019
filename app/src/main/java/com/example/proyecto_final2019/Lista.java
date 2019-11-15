@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+//diego
 public class Lista extends AppCompatActivity {
     ListView lv;
     ArrayList<String> lista;
