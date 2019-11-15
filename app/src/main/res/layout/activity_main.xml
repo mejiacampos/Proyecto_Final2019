@@ -10,7 +10,7 @@
     android:paddingTop="16dp"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#EDF79272">
+    android:background="#88E51E">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,14 +25,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="REGISTRO DE AUTOS"
+                android:text="  REGISTRO DE AUTOS"
                 android:textSize="37dp"
                 />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="172dp"
-                android:background="@drawable/venta"
+                android:background="@drawable/logo"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"/>
