@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//main2
+
 public class Main2Activity extends AppCompatActivity {
     EditText Ebuscar;
     TextView placa, marca, modelo, color, año;
