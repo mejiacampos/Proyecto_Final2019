@@ -22,9 +22,6 @@ public class Main2Activity extends AppCompatActivity {
     Button Bbuscar,BEliminar;
 
     //HOLA SOY BRAYAN EDUARDO, HOLA DIEGO**
-    EditText Ebuscar;
-    TextView marca, modelo;
-    Button Bbuscar,BEliminar;
 
 
     @Override
