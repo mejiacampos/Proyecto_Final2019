@@ -13,27 +13,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
-
-
-    //HOLA SOY BRAYAN EDUARDO, HOLA DIEGO**
-
     EditText Ebuscar;
-    TextView marca, modelo;
+    TextView placa, marca, modelo, color, año;
     Button Bbuscar,BEliminar;
-
-    //HOLA SOY BRAYAN EDUARDO, HOLA DIEGO**
-    EditText Ebuscar;
-    TextView marca, modelo;
-    Button Bbuscar,BEliminar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        placa=(TextView)findViewById(R.id.placa);
         marca=(TextView)findViewById(R.id.marca);
         modelo=(TextView)findViewById(R.id.modelo);
+        color=(TextView)findViewById(R.id.color);
+        año=(TextView)findViewById(R.id.año);
         Ebuscar=(EditText)findViewById(R.id.Ebuscar);
         Bbuscar=(Button)findViewById(R.id.Bbuscar);
         BEliminar=(Button)findViewById(R.id.BEliminar);
@@ -44,22 +37,27 @@ public class Main2Activity extends AppCompatActivity {
                 String buscar = Ebuscar.getText().toString();
                 String[] datos;
                 datos=db.buscar_reg(buscar);
-                marca.setText(datos[0]);
-                modelo.setText(datos[1]);
-                Toast.makeText(getApplicationContext(),datos[2],Toast.LENGTH_SHORT).show();
+                placa.setText(datos[0]);
+                marca.setText(datos[1]);
+                modelo.setText(datos[2]);
+                color.setText(datos[3]);
+                año.setText(datos[4]);
+                Toast.makeText(getApplicationContext(),datos[5],Toast.LENGTH_SHORT).show();
             }
         });
         BEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DB db = new DB(getApplicationContext(),null,null,1);
-                String Marca = marca.getText().toString();
-                String mensaje =db.eliminar(Marca);
+                String Placa = placa.getText().toString();
+                String mensaje =db.eliminar(Placa);
                 Toast.makeText(getApplicationContext(),mensaje,Toast.LENGTH_SHORT).show();
             }
         });
 
+
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main2, menu);

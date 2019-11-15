@@ -1,17 +1,13 @@
 <resources>
-    <string name="app_name">Proyecto</string>
-    <string name="marca">Escriba la Marca</string>
-    <string name="modelo">Escriba el Modelo</string>
-    <string name="guardar">Ingresar Registro</string>
-    <string name="hintmodelo">Ingrese nuevo Modelo</string>
-    <string name="hintmarca">Ingrese Nueva Marca</string>
+    <string name="app_name">Proyecto_Final</string>
+    <string name="placa">Escriba la Paca del Vehiculo</string>
+    <string name="marca">Escriba la Marca del Vehiculo</string>
+    <string name="modelo">Escriba el Modelo del Vehiculo</string>
+    <string name="color">Escriba el Color del Vehiculo</string>
+    <string name="año">Escriba el año del Vehiculo</string>
 
-    <string name="action_settings">Configuracion</string>
-    <string name="title_activity_main2">Buscar Registros</string>
-    <string name="buscar">Buscar</string>
-    <string name="eliminar">Eliminar</string>
-    <string name="hintbuscar">Buscar</string>
-    <string name="actualizar">Actualizar</string>
-    <string name="lista">Lista</string>
-    <string name="nuevoregistro">Nuevo Registro</string>
+    <string name="hintbuscar">Busqueda por Placa...</string>
+    <string name="action_settings">Acerca De</string>
+    <string name="lista">Inventario</string>
 </resources>
+
