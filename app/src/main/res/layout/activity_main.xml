@@ -42,32 +42,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/placa"
-                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_placa2"
+                android:layout_marginTop="10dp"
                 />
 
             <EditText
                 android:id="@+id/marca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/marca"/>
+                android:hint="@string/marca"
+                android:drawableStart="@drawable/ic_marca"/>
 
             <EditText
                 android:id="@+id/modelo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/modelo"/>
+                android:hint="@string/modelo"
+                android:drawableStart="@drawable/ic_modelo"
+                />
 
             <EditText
                 android:id="@+id/color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/color"/>
+                android:hint="@string/color"
+                android:drawableStart="@drawable/ic_color_lens"/>
 
             <EditText
                 android:id="@+id/año"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/año"/>
+                android:hint="@string/año"
+                android:drawableStart="@drawable/ic_avehi"/>
 
             <Button
                 android:id="@+id/guardar"
@@ -76,7 +82,8 @@
                 android:text="INGRESAR REGISTRO"
                 android:background="@drawable/btn_estilo"
                 android:layout_marginLeft="150dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                />
 
             <Button
                 android:id="@+id/buscar"

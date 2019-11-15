@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Proyecto_Final</string>
-    <string name="placa">Escriba la Paca del Vehiculo</string>
+    <string name="placa">Escriba la Placa del Vehiculo</string>
     <string name="marca">Escriba la Marca del Vehiculo</string>
     <string name="modelo">Escriba el Modelo del Vehiculo</string>
     <string name="color">Escriba el Color del Vehiculo</string>
