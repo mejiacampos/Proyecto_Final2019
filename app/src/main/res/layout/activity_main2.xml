@@ -87,3 +87,63 @@
                 android:layout_marginLeft="150dp"
                 android:layout_marginTop="5dp"
                 />
+
+
+            <EditText
+                android:id="@+id/NPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nueva Placa"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_edit"
+                android:drawableStart="@drawable/ic_placa2"
+                />
+            <EditText
+                android:id="@+id/NMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nueva Marca"
+                android:background="@drawable/btn_edit"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_marca"/>
+            <EditText
+                android:id="@+id/NModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nuevo Modelo"
+                android:background="@drawable/btn_edit"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_modelo"/>
+
+            <EditText
+                android:id="@+id/NColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nuevo Color"
+                android:background="@drawable/btn_edit"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_color_lens"/>
+            <EditText
+                android:id="@+id/NAño"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nuevo Año"
+                android:background="@drawable/btn_edit"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_avehi"/>
+
+
+
+            <Button
+                android:id="@+id/BActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar"
+                android:background="@drawable/btn_estilo"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
