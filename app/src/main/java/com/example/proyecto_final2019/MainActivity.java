@@ -24,8 +24,12 @@ MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Emarca=(EditText)findViewById(R.id.marca);
         Emodelo=(EditText)findViewById(R.id.modelo);
+<<<<<<< HEAD
 
         guardar=(Button)findViewById(R.id.guardar);
+=======
+        guardar=(Button )findViewById(R.id.guardar);
+>>>>>>> 2c4657817a958cffa66abb33c3ca633c29cf3b68
         buscar=(Button)findViewById(R.id.buscar);
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,3 +41,22 @@ MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),mensaje,Toast.LENGTH_SHORT).show();
             }
         });
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_settins) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}
