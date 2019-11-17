@@ -70,3 +70,50 @@
                 android:textColorHint="#000000"
                 android:background="@drawable/btn_edit"
                 />
+
+            <EditText
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/color"
+                android:drawableStart="@drawable/ic_color_lens"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"/>
+
+            <EditText
+                android:id="@+id/año"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/año"
+                android:drawableStart="@drawable/ic_avehi"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"
+                />
+
+            <Button
+                android:id="@+id/guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGRESAR REGISTRO"
+                android:background="@drawable/btn_estilo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                />
+
+            <Button
+                android:id="@+id/buscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_estilo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Buscar" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
