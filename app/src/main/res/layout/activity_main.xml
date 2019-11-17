@@ -34,7 +34,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="172dp"
-                android:background="@drawable/logo"
+                android:background="@drawable/lo"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"/>
@@ -47,6 +47,7 @@
                 android:drawableStart="@drawable/ic_placa2"
                 android:layout_marginTop="10dp"
                 android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"
                 />
 
             <EditText
@@ -56,7 +57,8 @@
                 android:hint="@string/marca"
                 android:drawableStart="@drawable/ic_marca"
                 android:layout_marginTop="5dp"
-                android:textColorHint="#000000"/>
+                android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"/>
 
             <EditText
                 android:id="@+id/modelo"
@@ -66,49 +68,5 @@
                 android:drawableStart="@drawable/ic_modelo"
                 android:layout_marginTop="5dp"
                 android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"
                 />
-
-            <EditText
-                android:id="@+id/color"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/color"
-                android:drawableStart="@drawable/ic_color_lens"
-                android:layout_marginTop="5dp"
-                android:textColorHint="#000000"/>
-
-            <EditText
-                android:id="@+id/año"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/año"
-                android:drawableStart="@drawable/ic_avehi"
-                android:layout_marginTop="5dp"
-                android:textColorHint="#000000"
-                />
-
-            <Button
-                android:id="@+id/guardar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="INGRESAR REGISTRO"
-                android:background="@drawable/btn_estilo"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
-                />
-
-            <Button
-                android:id="@+id/buscar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/btn_estilo"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:text="Buscar" />
-
-
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
