@@ -46,3 +46,50 @@ public class DB extends SQLiteOpenHelper {
         database.close();
         return mensaje;
     }
+
+    public String[] buscar_reg(String buscar) {
+        String[] datos = new String[6];
+        SQLiteDatabase database = this.getWritableDatabase();
+        String q = "SELECT * FROM datos WHERE placa ='" + buscar + "'";
+        Cursor registros = database.rawQuery(q, null);
+        if (registros.moveToNext()) {
+            for (int i = 0; i < 5; i++) {
+                datos[i] = registros.getString(i);
+            }
+            datos[5] = "Encontrado";
+        } else {
+            datos[5] = "No se Encontro a: " + buscar;
+        }
+        database.close();
+        return datos;
+    }
+
+    public String eliminar(String Placa) {
+        String mensaje = "'";
+        SQLiteDatabase database = this.getWritableDatabase();
+        int cantidad = database.delete("datos", "placa='" + Placa + "'", null);
+        if (cantidad != 0) {
+            mensaje = " Eliminado Correctamente";
+        } else {
+            mensaje = "No Existe";
+        }
+
+        database.close();
+        return mensaje;
+    }
+
+    public ArrayList llenar_lv() {
+        ArrayList<String> lista = new ArrayList<>();
+        SQLiteDatabase database = this.getWritableDatabase();
+        String q = "SELECT * FROM datos";
+        Cursor registros = database.rawQuery(q, null);
+        if (registros.moveToFirst()) {
+            do {
+                lista.add(registros.getString(0));
+            } while (registros.moveToNext());
+
+        }
+        database.close();
+        return lista;
+    }
+}
