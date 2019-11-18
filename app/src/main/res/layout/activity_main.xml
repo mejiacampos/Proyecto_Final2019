@@ -92,6 +92,68 @@
                 android:background="@drawable/btn_edit"
                 />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos del Propietario"
+                android:textSize="29dp"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/dui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dui"
+                android:drawableStart="@drawable/ic_avehi"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"
+                />
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:drawableStart="@drawable/ic_avehi"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"
+                />
+
+            <EditText
+                android:id="@+id/apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellidos"
+                android:drawableStart="@drawable/ic_avehi"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"
+                />
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:drawableStart="@drawable/ic_avehi"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"
+                />
+
+            <EditText
+                android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Direccion"
+                android:drawableStart="@drawable/ic_avehi"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/btn_edit"
+                />
+
             <Button
                 android:id="@+id/guardar"
                 android:layout_width="match_parent"
@@ -112,6 +174,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:text="Buscar" />
+
 
 
         </LinearLayout>

@@ -31,6 +31,12 @@
                 android:drawableStart="@drawable/ic_buscarplaca"
                 android:background="@drawable/btn_edit"
                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos del Vehiculo"
+                android:textSize="20dp"
+                android:textColor="#000"/>
 
             <TextView
                 android:id="@+id/placa"
@@ -64,6 +70,46 @@
 
             <TextView
                 android:id="@+id/año"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_avehi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos del Propietario"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/dui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_avehi"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_avehi"/>
+            <TextView
+                android:id="@+id/apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_avehi"/>
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_avehi"/>
+            <TextView
+                android:id="@+id/direccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="25dp"

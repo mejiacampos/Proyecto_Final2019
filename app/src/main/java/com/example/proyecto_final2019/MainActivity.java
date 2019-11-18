@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText Eplaca, Emarca, Emodelo, Ecolor, Eaño;
+    EditText Eplaca, Emarca, Emodelo, Ecolor, Eaño, Edui, Enombre, Eapellido, Etelefono, Edireccion;
     Button guardar,buscar;
 //diego
     @Override
@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
         Emodelo=(EditText)findViewById(R.id.modelo);
         Ecolor=(EditText)findViewById(R.id.color);
         Eaño=(EditText)findViewById(R.id.año);
+        Edui=(EditText)findViewById(R.id.dui);
+        Enombre=(EditText)findViewById(R.id.nombre);
+        Eapellido=(EditText)findViewById(R.id.apellido);
+        Etelefono=(EditText)findViewById(R.id.telefono);
+        Edireccion=(EditText)findViewById(R.id.direccion);
         guardar=(Button)findViewById(R.id.guardar);
         buscar=(Button)findViewById(R.id.buscar);
         guardar.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 String modelo = Emodelo.getText().toString();
                 String color = Ecolor.getText().toString();
                 String año = Eaño.getText().toString();
-                String mensaje =db.guardar(placa, marca, modelo, color, año);
+                String dui = Edui.getText().toString();
+                String nombre = Enombre.getText().toString();
+                String apellido = Eapellido.getText().toString();
+                String telefono = Etelefono.getText().toString();
+                String direccion = Edireccion.getText().toString();
+                String mensaje =db.guardar(placa, marca, modelo, color, año, dui, nombre, apellido, telefono, direccion);
                 Toast.makeText(getApplicationContext(),mensaje,Toast.LENGTH_SHORT).show();
             }
         });
