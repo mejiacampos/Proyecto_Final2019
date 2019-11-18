@@ -12,76 +12,138 @@
     tools:context=".Main2Activity"
     android:background="#88E51E">
 
-    <EditText
-        android:id="@+id/Ebuscar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hintbuscar"
-        android:layout_marginTop="6dp"
-        android:drawableStart="@drawable/ic_buscarplaca"
-        />
 
-    <TextView
-        android:id="@+id/placa"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:drawableStart="@drawable/ic_placa2"
-        />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/marca"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:drawableStart="@drawable/ic_marca"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/modelo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:drawableStart="@drawable/ic_modelo"/>
+            <EditText
+                android:id="@+id/Ebuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintbuscar"
+                android:layout_marginTop="6dp"
+                android:drawableStart="@drawable/ic_buscarplaca"
+                android:background="@drawable/btn_edit"
+                />
 
-    <TextView
-        android:id="@+id/color"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:drawableStart="@drawable/ic_color_lens"/>
+            <TextView
+                android:id="@+id/placa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_placa2"
+                android:layout_marginTop="5dp"
+                />
 
-    <TextView
-        android:id="@+id/año"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:drawableStart="@drawable/ic_avehi"/>
+            <TextView
+                android:id="@+id/marca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_marca"/>
 
-    <Button
-        android:id="@+id/Bbuscar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="BUSCAR"
-        android:background="@drawable/btn_estilo"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="150dp"/>
+            <TextView
+                android:id="@+id/modelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_modelo"/>
 
-    <Button
-        android:id="@+id/BEliminar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ELIMINAR"
-        android:background="@drawable/btn_estilo"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="5dp"
-        />
-    <Button
-        android:id="@+id/lista"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lista"
-        android:background="@drawable/btn_estilo"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="150dp"/>
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_color_lens"/>
 
+            <TextView
+                android:id="@+id/año"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:drawableStart="@drawable/ic_avehi"/>
+
+            <Button
+                android:id="@+id/Bbuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUSCAR"
+                android:background="@drawable/btn_estilo"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="150dp"/>
+
+            <Button
+                android:id="@+id/BEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ELIMINAR"
+                android:background="@drawable/btn_estilo"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:id="@+id/NPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nueva Placa"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_edit"
+                android:drawableStart="@drawable/ic_placa2"
+                />
+            <EditText
+                android:id="@+id/NMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nueva Marca"
+                android:background="@drawable/btn_edit"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_marca"/>
+            <EditText
+                android:id="@+id/NModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nuevo Modelo"
+                android:background="@drawable/btn_edit"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_modelo"/>
+
+            <EditText
+                android:id="@+id/NColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nuevo Color"
+                android:background="@drawable/btn_edit"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_color_lens"/>
+            <EditText
+                android:id="@+id/NAño"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Nuevo Año"
+                android:background="@drawable/btn_edit"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_avehi"/>
+
+
+
+            <Button
+                android:id="@+id/BActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar"
+                android:background="@drawable/btn_estilo"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
