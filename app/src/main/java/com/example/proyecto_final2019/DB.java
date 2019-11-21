@@ -27,7 +27,7 @@ public class DB extends SQLiteOpenHelper {
 
     }
 
-    public String guardar(String placa, String marca, String modelo, String color, String año) {
+    public String guardar(String placa, String marca, String modelo, String color, String año, String dui, String nombre, String apellido, String telefono, String direccion) {
         String mensaje = "'";
         SQLiteDatabase database = this.getReadableDatabase();
         ContentValues contenedor = new ContentValues();
@@ -36,6 +36,11 @@ public class DB extends SQLiteOpenHelper {
         contenedor.put("modelo", modelo);
         contenedor.put("color", color);
         contenedor.put("año", año);
+        contenedor.put("dui", dui);
+        contenedor.put("nombre", nombre);
+        contenedor.put("apellido", apellido);
+        contenedor.put("telefono", telefono);
+        contenedor.put("direccion", direccion);
 
         try {
             database.insertOrThrow("datos", null, contenedor);
