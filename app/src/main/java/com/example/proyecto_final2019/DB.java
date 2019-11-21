@@ -53,17 +53,17 @@ public class DB extends SQLiteOpenHelper {
     }
 
     public String[] buscar_reg(String buscar) {
-        String[] datos = new String[6];
+        String[] datos = new String[11];
         SQLiteDatabase database = this.getWritableDatabase();
         String q = "SELECT * FROM datos WHERE placa ='" + buscar + "'";
         Cursor registros = database.rawQuery(q, null);
         if (registros.moveToNext()) {
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 10; i++) {
                 datos[i] = registros.getString(i);
             }
-            datos[5] = "Encontrado";
+            datos[10] = "Encontrado";
         } else {
-            datos[5] = "No se Encontro a: " + buscar;
+            datos[10] = "No se Encontro a: " + buscar;
         }
         database.close();
         return datos;

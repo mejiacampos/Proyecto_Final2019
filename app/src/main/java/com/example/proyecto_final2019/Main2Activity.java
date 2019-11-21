@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
     EditText Ebuscar;
-    TextView placa, marca, modelo, color, año;
+    TextView placa, marca, modelo, color, año, dui, nombre, apellido, telefono, direccion;
     Button Bbuscar,BEliminar;
 
     @Override
@@ -29,9 +29,20 @@ public class Main2Activity extends AppCompatActivity {
         modelo=(TextView)findViewById(R.id.modelo);
         color=(TextView)findViewById(R.id.color);
         año=(TextView)findViewById(R.id.año);
+        dui=(TextView)findViewById(R.id.dui);
+        nombre=(TextView)findViewById(R.id.nombre);
+        apellido=(TextView)findViewById(R.id.apellido);
+        telefono=(TextView)findViewById(R.id.telefono);
+        direccion=(TextView)findViewById(R.id.direccion);
         Ebuscar=(EditText)findViewById(R.id.Ebuscar);
         Bbuscar=(Button)findViewById(R.id.Bbuscar);
         BEliminar=(Button)findViewById(R.id.BEliminar);
+        nplaca=(EditText)findViewById(R.id.NPlaca);
+        nmarca=(EditText)findViewById(R.id.NMarca);
+        nmodelo=(EditText)findViewById(R.id.NModelo);
+        ncolor=(EditText)findViewById(R.id.NColor);
+        naño=(EditText)findViewById(R.id.NAño);
+        BActualizar=(Button)findViewById(R.id.BActualizar);
         Bbuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +55,12 @@ public class Main2Activity extends AppCompatActivity {
                 modelo.setText(datos[2]);
                 color.setText(datos[3]);
                 año.setText(datos[4]);
-                Toast.makeText(getApplicationContext(),datos[5],Toast.LENGTH_SHORT).show();
+                dui.setText(datos[5]);
+                nombre.setText(datos[6]);
+                apellido.setText(datos[7]);
+                telefono.setText(datos[8]);
+                direccion.setText(datos[9]);
+                Toast.makeText(getApplicationContext(),datos[10],Toast.LENGTH_SHORT).show();
             }
         });
         BEliminar.setOnClickListener(new View.OnClickListener() {
